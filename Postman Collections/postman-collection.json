@@ -115,7 +115,7 @@
 						}
 					}
 				},
-				"url": "{{esg_runtime_url}}/api/envelopeInfo"
+				"url": "{{esg_runtime_url}}/api/signingUrl"
 			},
 			"response": []
 		},
