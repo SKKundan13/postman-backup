@@ -7,7 +7,45 @@
 	"item": [
 		{
 			"name": "Patient Search",
-			"_postman_id": "53520e9a-44e2-4cfe-8e3d-8e418cb78ebc",
+			"id": "53520e9a-44e2-4cfe-8e3d-8e418cb78ebc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CSP-DHISP-Source",
+						"value": "{{source}}",
+						"type": "text"
+					},
+					{
+						"key": "X-CSP-DHISP-TrackingID",
+						"value": "{{$guid}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"phoneNumber\": \"+145678901234\",\n  \"careProgram\": \"US TZPO Care Program\",\n  \"dob\": \"2000-03-15\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{esg_runtime_url}}/api/patientSearch"
+			},
+			"response": []
+		},
+		{
+			"name": "Envelope Info",
+			"id": "9205b6b0-93c4-449c-ac3b-9c0280bcc947",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -45,7 +83,7 @@
 		},
 		{
 			"name": "Callback",
-			"_postman_id": "72ec8fa4-d9c0-4d58-bce3-735b1b0baa34",
+			"id": "72ec8fa4-d9c0-4d58-bce3-735b1b0baa34",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
