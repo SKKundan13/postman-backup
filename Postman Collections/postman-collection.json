@@ -70,6 +70,44 @@
 				],
 				"body": {
 					"mode": "raw",
+					"raw": "{\n  \"envelopeId\": \"bfe31dac-278b-454f-a4a3-b069008c727d\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{esg_runtime_url}}/api/envelopeInfo"
+			},
+			"response": []
+		},
+		{
+			"name": "Envelope Info Copy",
+			"id": "00cc8d8e-07ae-4b44-8327-4bc482bb2081",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CSP-DHISP-Source",
+						"value": "{{source}}",
+						"type": "text"
+					},
+					{
+						"key": "X-CSP-DHISP-TrackingID",
+						"value": "{{$guid}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
 					"raw": "{\n  \"envelopeId\": \"ca4bda76-eba3-4723-ae98-a0d02827755a\"\n}",
 					"options": {
 						"raw": {
