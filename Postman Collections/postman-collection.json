@@ -70,14 +70,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"phoneNumber\": \"+145678901234\",\n  \"careProgram\": \"US TZPO Care Program\",\n  \"dob\": \"2000-03-15\"\n}\n",
+					"raw": "{\n  \"envelopeId\": \"ca4bda76-eba3-4723-ae98-a0d02827755a\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{esg_runtime_url}}/api/patientSearch"
+				"url": "{{esg_runtime_url}}/api/envelopeInfo"
 			},
 			"response": []
 		},
