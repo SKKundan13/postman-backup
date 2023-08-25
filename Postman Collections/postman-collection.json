@@ -82,7 +82,7 @@
 			"response": []
 		},
 		{
-			"name": "Envelope Info Copy",
+			"name": "Signing URL",
 			"id": "00cc8d8e-07ae-4b44-8327-4bc482bb2081",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
