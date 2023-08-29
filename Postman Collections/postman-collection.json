@@ -70,14 +70,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"phoneNumber\": \"+145678901234\",\n  \"careProgram\": \"US TZPO Care Program\",\n  \"dob\": \"2000-03-15\"\n}\n",
+					"raw": "{\n    \"userInfo\": {\n        \"firstName\": \"BrendaTest1234567890\",\n        \"lastName\": \"Ross44482rr38723\",\n        \"dateOfBirth\": \"1967-04-11\",\n        \"address\": {\n            \"street1\": \"4254 Comfort Court\",\n            \"city\": \"Madison\",\n            \"state\": \"WY\",\n            \"zip\": \"53703\",\n            \"country\": \"USA\"\n        },\n        \"phoneNumber\": \"608-315-5550\",\n        \"phoneNumberType\": \"Cell\",\n        \"email\": \"Brendaross1234567890@gmail.com\",\n        \"brandProgram\": \"Ebglyss US\",\n        \"programMMNNumber\": \"PP-IX-US-4833 05/2021\",\n        \"programAffiliate\": \"US\",\n        \"uid\": \"\",\n        \"isSharpDisposalRequested\": true,\n        \"isInjectionTrainingRequested\": true,\n        \"isSavingCardRequested\": true,\n        \"conditions\": \"Psoriasis\",\n        \"18YrsOfAge\": true,\n        \"savingsCardFlow\": \"register\",\n        \"verificationMethod\": \"email\",\n        \"coPayCardDocusign\": true,\n        \"isOngoingSupportRequested\": true,\n        \"sessionId\": \"testolumiant123456789009da0\"\n        \n    },\n    \"caregiverInfo\": {},\n    \"consents\": {\n        \"textConsent\": true,\n        \"tcpaConsent\": true,\n        \"tcpaConsentDate\": \"2022-05-16\",\n        \"emailConsent\": true,\n        \"emailConsentDate\": \"2022-05-16\",\n        \"marketingConsent\": true,\n        \"marketingConsentDate\": \"2022-05-16\",\n        \"ongoingSupport\": \"Caregiver Initiated\",\n        \"medicalResearchConsent\": true,\n        \"medicalResearchConsentDate\": \"2022-05-16\",\n        \"marketingSMSEnabled\": true\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{esg_runtime_url}}/api/patientSearch"
+				"url": "{{esg_runtime_url}}/api/enrollment"
 			},
 			"response": []
 		},
@@ -108,14 +108,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"phoneNumber\": \"+145678901234\",\n  \"careProgram\": \"US TZPO Care Program\",\n  \"dob\": \"2000-03-15\"\n}\n",
+					"raw": "{\n    \"documentInfo\": {\n        \"uid\": \"6a764b3e-1633-453d-8237-bbfc2915da12\",\n        \"email\": \"ksingla@deloitte.com\",\n        \"phoneNumber\": \"9999999990\",\n        \"envelopeId\": \"f86f3822-97bc-414b-b9df-07fe0870eec1\",\n        \"brandProgram\": \"Ixekizumab US\",\n        \"isSavingCardRequested\": true,\n        \"notificationType\": \"email\",\n        \"savingsCardFlow\": \"register\",\n        \"sessionId\": \"testolumiant123456789009da0\"\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{esg_runtime_url}}/api/patientSearch"
+				"url": "{{esg_runtime_url}}/api/consent"
 			},
 			"response": []
 		},
