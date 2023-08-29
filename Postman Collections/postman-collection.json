@@ -82,6 +82,44 @@
 			"response": []
 		},
 		{
+			"name": "Consent",
+			"id": "354fa208-8005-450d-8091-4406b852de28",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CSP-DHISP-Source",
+						"value": "{{source}}",
+						"type": "text"
+					},
+					{
+						"key": "X-CSP-DHISP-TrackingID",
+						"value": "{{$guid}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"phoneNumber\": \"+145678901234\",\n  \"careProgram\": \"US TZPO Care Program\",\n  \"dob\": \"2000-03-15\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{esg_runtime_url}}/api/patientSearch"
+			},
+			"response": []
+		},
+		{
 			"name": "Envelope Info",
 			"id": "9205b6b0-93c4-449c-ac3b-9c0280bcc947",
 			"protocolProfileBehavior": {
