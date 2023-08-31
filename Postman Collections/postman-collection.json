@@ -108,14 +108,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"phoneNumber\": \"+145678901234\",\n  \"careProgram\": \"US TZPO Care Program\",\n  \"dob\": \"2000-03-15\"\n}\n",
+					"raw": "{\n    \"documentInfo\": {\n        \"uid\": \"6a764b3e-1633-453d-8237-bbfc2915da12\",\n        \"email\": \"ksingla@deloitte.com\",\n        \"phoneNumber\": \"9999999990\",\n        \"envelopeId\": \"f86f3822-97bc-414b-b9df-07fe0870eec1\",\n        \"brandProgram\": \"Ixekizumab US\",\n        \"isSavingCardRequested\": true,\n        \"notificationType\": \"email\",\n        \"savingsCardFlow\": \"register\",\n        \"sessionId\": \"testolumiant123456789009da0\"\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{esg_runtime_url}}/api/patientSearch"
+				"url": "{{esg_runtime_url}}/api/consent"
 			},
 			"response": []
 		},
@@ -154,44 +154,6 @@
 					}
 				},
 				"url": "{{esg_runtime_url}}/api/envelopeInfo"
-			},
-			"response": []
-		},
-		{
-			"name": "Signing URL",
-			"id": "00cc8d8e-07ae-4b44-8327-4bc482bb2081",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-CSP-DHISP-Source",
-						"value": "{{source}}",
-						"type": "text"
-					},
-					{
-						"key": "X-CSP-DHISP-TrackingID",
-						"value": "{{$guid}}",
-						"type": "text"
-					},
-					{
-						"key": "Authorization",
-						"value": "{{access_token}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"envelopeId\": \"ca4bda76-eba3-4723-ae98-a0d02827755a\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{esg_runtime_url}}/api/signingUrl"
 			},
 			"response": []
 		},
