@@ -88,7 +88,7 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [
 					{
 						"key": "X-CSP-DHISP-Source",
@@ -108,7 +108,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"documentInfo\": {\n        \"uid\": \"6a764b3e-1633-453d-8237-bbfc2915da12\",\n        \"email\": \"ksingla@deloitte.com\",\n        \"phoneNumber\": \"9999999990\",\n        \"envelopeId\": \"f86f3822-97bc-414b-b9df-07fe0870eec1\",\n        \"brandProgram\": \"Ixekizumab US\",\n        \"isSavingCardRequested\": true,\n        \"notificationType\": \"email\",\n        \"savingsCardFlow\": \"register\",\n        \"sessionId\": \"testolumiant123456789009da0\"\n    }\n}",
+					"raw": "{\n    \"documentInfo\": {\n        \"uid\": \"fd3767f4-3906-4b0c-95b4-b07600da4cd7\",\n        \"email\": \"ksingla@deloitte.com\",\n        \"phoneNumber\": \"9999999990\",\n        \"envelopeId\": \"f86f3822-97bc-414b-b9df-07fe0870eec1\",\n        \"brandProgram\": \"Ebglyss US\",\n        \"isSavingCardRequested\": true,\n        \"notificationType\": \"email\",\n        \"savingsCardFlow\": \"register\",\n        \"sessionId\": \"testolumiant123456789009da0\",\n        \"18YrsOfAge\": true\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
