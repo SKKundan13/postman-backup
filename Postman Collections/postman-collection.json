@@ -82,6 +82,44 @@
 			"response": []
 		},
 		{
+			"name": "Wallet",
+			"id": "174263ff-f979-4e4b-9d95-2d10acfc66a0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CSP-DHISP-Source",
+						"value": "{{source}}",
+						"type": "text"
+					},
+					{
+						"key": "X-CSP-DHISP-TrackingID",
+						"value": "{{$guid}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userInfo\": {\n        \"firstName\": \"BrendaTest1234567890\",\n        \"lastName\": \"Ross44482rr38723\",\n        \"dateOfBirth\": \"1967-04-11\",\n        \"address\": {\n            \"street1\": \"4254 Comfort Court\",\n            \"city\": \"Madison\",\n            \"state\": \"WY\",\n            \"zip\": \"53703\",\n            \"country\": \"USA\"\n        },\n        \"phoneNumber\": \"608-315-5550\",\n        \"phoneNumberType\": \"Cell\",\n        \"email\": \"Brendaross1234567890@gmail.com\",\n        \"brandProgram\": \"Ebglyss US\",\n        \"programMMNNumber\": \"PP-IX-US-4833 05/2021\",\n        \"programAffiliate\": \"US\",\n        \"uid\": \"\",\n        \"isSharpDisposalRequested\": true,\n        \"isInjectionTrainingRequested\": true,\n        \"isSavingCardRequested\": true,\n        \"conditions\": \"Psoriasis\",\n        \"18YrsOfAge\": true,\n        \"savingsCardFlow\": \"register\",\n        \"verificationMethod\": \"email\",\n        \"coPayCardDocusign\": true,\n        \"isOngoingSupportRequested\": true,\n        \"sessionId\": \"testolumiant123456789009da0\"\n        \n    },\n    \"caregiverInfo\": {},\n    \"consents\": {\n        \"textConsent\": true,\n        \"tcpaConsent\": true,\n        \"tcpaConsentDate\": \"2022-05-16\",\n        \"emailConsent\": true,\n        \"emailConsentDate\": \"2022-05-16\",\n        \"marketingConsent\": true,\n        \"marketingConsentDate\": \"2022-05-16\",\n        \"ongoingSupport\": \"Caregiver Initiated\",\n        \"medicalResearchConsent\": true,\n        \"medicalResearchConsentDate\": \"2022-05-16\",\n        \"marketingSMSEnabled\": true\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{esg_runtime_url}}/api/enrollment"
+			},
+			"response": []
+		},
+		{
 			"name": "Consent",
 			"id": "354fa208-8005-450d-8091-4406b852de28",
 			"protocolProfileBehavior": {
