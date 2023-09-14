@@ -70,7 +70,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"phoneNumber\": \"+145678901234\",\n  \"careProgram\": \"US TZPO Care Program\",\n  \"dob\": \"2000-03-15\"\n}\n",
+					"raw": "{\n  \"patientExists\": true,\n  \"hipaaOptOut\": true,\n  \"researchOptOut\": true,\n  \"patientDetails\": {\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"phone\": \"+1234567890\",\n  \"dob\": \"1995-12-25\",\n  \"email\": \"example@email.com\",\n  \"address\": {\n    \"street\": \"123 Someplace Drive\",\n    \"city\": \"Scranton\", \n    \"stateProvince\": \"PA\",\n    \"zipPostal\": \"123454\" \n    }\n  }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
