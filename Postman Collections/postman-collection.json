@@ -44,7 +44,7 @@
 			"response": []
 		},
 		{
-			"name": "Opt Out",
+			"name": "OptOut",
 			"id": "363acc6f-0e99-40ba-a316-76487879c00f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
