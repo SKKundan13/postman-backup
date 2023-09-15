@@ -82,6 +82,44 @@
 			"response": []
 		},
 		{
+			"name": "OperatingHours",
+			"id": "7930c0bc-1057-4cd2-9087-b6c1496a3955",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CSP-DHISP-Source",
+						"value": "{{source}}",
+						"type": "text"
+					},
+					{
+						"key": "X-CSP-DHISP-TrackingID",
+						"value": "{{$guid}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"patientExists\": true,\n  \"hipaaOptOut\": true,\n  \"researchOptOut\": true,\n  \"patientDetails\": {\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"phone\": \"+1234567890\",\n  \"dob\": \"1995-12-25\",\n  \"email\": \"example@email.com\",\n  \"address\": {\n    \"street\": \"123 Someplace Drive\",\n    \"city\": \"Scranton\", \n    \"stateProvince\": \"PA\",\n    \"zipPostal\": \"123454\" \n    }\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{esg_runtime_url}}/api/patientSearch"
+			},
+			"response": []
+		},
+		{
 			"name": "Enrollment",
 			"id": "62dd4915-c366-460c-974b-1657838a2fd4",
 			"protocolProfileBehavior": {
