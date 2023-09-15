@@ -108,14 +108,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"patientExists\": true,\n  \"hipaaOptOut\": true,\n  \"researchOptOut\": true,\n  \"patientDetails\": {\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"phone\": \"+1234567890\",\n  \"dob\": \"1995-12-25\",\n  \"email\": \"example@email.com\",\n  \"address\": {\n    \"street\": \"123 Someplace Drive\",\n    \"city\": \"Scranton\", \n    \"stateProvince\": \"PA\",\n    \"zipPostal\": \"123454\" \n    }\n  }\n}",
+					"raw": "{\n  \"dayOfWeek\": \"Monday\",\n  \"currentDateTime\": \"2023-08-20T16:15:00.000Z\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{esg_runtime_url}}/api/patientSearch"
+				"url": "{{esg_runtime_url}}/api/operatingHours"
 			},
 			"response": []
 		},
