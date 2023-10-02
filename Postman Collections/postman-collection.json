@@ -77,7 +77,7 @@
 						}
 					}
 				},
-				"url": "{{esg_runtime_url}}/api/patientSearch"
+				"url": "{{esg_runtime_url}}/api/tzpo/optOut"
 			},
 			"response": []
 		},
