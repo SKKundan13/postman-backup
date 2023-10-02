@@ -115,7 +115,7 @@
 						}
 					}
 				},
-				"url": "{{esg_runtime_url}}/api/operatingHours"
+				"url": "{{esg_runtime_url}}/api/tzpo/operatingHours"
 			},
 			"response": []
 		},
