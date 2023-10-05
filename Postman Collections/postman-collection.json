@@ -32,7 +32,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"phoneNumber\": \"+16782995097\",\n  \"careProgram\": \"US TZPO Care Program\",\n  \"dob\": \"1990-06-24\"\n}\n",
+					"raw": "{\n  \"phoneNumber\": \"+16782995097\",\n  \"careProgram\": \"US ZepBound Care Program\",\n  \"dob\": \"1990-06-24\"\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
